@@ -1,0 +1,71 @@
+.footer {
+    position: relative;
+    height: 80px;
+    background-image: linear-gradient(to right, rgb(30, 30, 30), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockTitle {
+    font-style: italic;
+    font-weight: 700;
+    /*color: deeppink;*/
+    color: black;
+}
+
+.socialBlock {
+    display: flex;
+    justify-content: space-between;
+    /*z-index: 2;*/
+}
+
+.socialIcon {
+    padding: 3px 10px;
+    text-decoration: none;
+    color: black;
+    opacity: .5;
+}
+
+.socialIcon:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 627px) {
+    .socialBlock {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .socialIcon {
+        width: 50px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .blockTitle {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .blockTitle {
+        font-size: calc(0.6rem + 6 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .blockTitle {
+        font-size: 16px;
+    }
+}

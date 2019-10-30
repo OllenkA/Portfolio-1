@@ -1,0 +1,120 @@
+.skills {
+    position: relative;
+    height: 100vh;
+    /*background-color: lightpink;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgb(60, 60, 60), dimgrey, white);
+
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    color: deeppink;
+    text-shadow: 3px -3px 2px black;
+    margin: 0;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.skill {
+    width: 33%;
+    /*height: 10%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.name {
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.url {
+    width: 35%;
+    /*height: 45%;*/
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transition: all 500ms ease;*/
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.url:hover {
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 320px) {
+    .main {
+        font-size: 20px
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .main {
+        font-size: calc(1.2rem + 15 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .main {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 320px) {
+    .name {
+        font-size: 10px
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .name {
+        font-size: calc(0.6rem + 6 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skill {
+        width: 50%;
+    }
+}

@@ -1,0 +1,35 @@
+.word {
+    color: deeppink;
+    font-style: italic;
+    text-shadow: 1px -1px 1px black;
+    animation: fade-in 2s ease-in;
+}
+
+.word:hover {
+    opacity: 0.5;
+    cursor: pointer !important;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 320px) {
+    .word {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .word {
+        font-size: calc(1.2rem + 16 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .word {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,25 @@
+.main {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    color: deeppink;
+    text-shadow: 1px -1px 1px black;
+}
+
+@media (max-width: 320px) {
+    .main {
+        font-size: 20px
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .main {
+        font-size: calc(1.2rem + 16 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .main {
+        font-size: 34px;
+    }
+}

@@ -1,0 +1,132 @@
+.works {
+    position: relative;
+    height: 100vh;
+    background-image: radial-gradient(darkgrey, dimgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.href {
+    width: 80%;
+    box-shadow: 5px -5px 3px dimgrey;
+    border: 8px outset white;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2;
+    animation: emerging 2s ease-in;
+
+}
+
+.href:hover {
+    /*opacity: 0.5;*/
+    animation: emerging 2s ease-in;;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.but:hover {
+    opacity: 0.5;
+}
+
+.switch {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@keyframes emerging {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nameProject {
+    height: 10%;
+    /*color: black;*/
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+}
+
+.btn {
+    padding-top: 15px;
+    color: white;
+    text-decoration: none;
+    height: 10%;
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+}
+
+.but {
+    width: 20%;
+    cursor: pointer;
+    text-shadow: 2px -2px 3px black;
+    color: deeppink;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 1134px) {
+    .href {
+        box-shadow: none;
+        border: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        font-size: 8px
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .btn {
+        font-size: calc(0.5rem + 7 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .btn {
+        font-size: 15px;
+    }
+}

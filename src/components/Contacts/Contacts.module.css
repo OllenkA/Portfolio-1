@@ -1,0 +1,109 @@
+.contacts {
+    position: relative;
+    height: calc(100vh - 100px);
+    display: flex;
+    background-image: linear-gradient(to left bottom, rgb(30,30,30), white, rgb(30,30,30));
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /*position: absolute;*/
+    z-index: 1;
+}
+
+.formArea {
+    outline: none;
+    box-shadow: 5px -5px 5px 2px grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btnSubmit {
+    position: absolute;
+    z-index: 1;
+    margin-top: 320px;
+    /*opacity: .5;*/
+    font-size: 20px;
+    /*color: ;*/
+    text-shadow: 2px -2px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.btnSubmit:focus {
+    outline: none;
+}
+
+.btnSubmit:hover {
+    cursor: pointer;
+}
+
+.btnSubmit::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: deeppink;
+    z-index: -1;
+    bottom: 2px;
+}
+
+.messageArea {
+    box-shadow: 5px -5px 5px 2px grey;
+    min-height: 160px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+@media screen and (max-width: 601px) {
+    .formWrapper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .contact {
+        font-size: 20px
+    }
+    .btnSubmit{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .contact {
+        font-size: calc(1.2rem + 16 * (100vw - 320px) / 880);
+    }
+    .btnSubmit {
+        font-size: calc(0.7rem + 10 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .contact {
+        font-size: 34px;
+    }
+    .btnSubmit {
+        font-size: 20px;
+    }
+}

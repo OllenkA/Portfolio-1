@@ -1,0 +1,59 @@
+.nav {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500;
+    color: deeppink;
+}
+
+.img {
+    width: 10%;
+    height: 70%;
+    align-self: center;
+    color: black;
+    cursor: pointer;
+    animation: bounce infinite  1s linear;
+}
+
+.name:hover {
+    opacity: 0.5;
+}
+
+@keyframes bounce {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 350px){
+    .nav{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .name {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 321px) {
+    .name{
+        font-size: calc(0.6rem + 10 * (100vw - 320px) / 880);
+    }
+}
+
+@media (min-width: 1201px) {
+    .name {
+        font-size: 18px;
+    }
+}

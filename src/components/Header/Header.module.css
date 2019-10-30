@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  z-index: 3;
+  height: 60px;
+  background-image: linear-gradient(to right, white, rgb(30, 30, 30));
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
