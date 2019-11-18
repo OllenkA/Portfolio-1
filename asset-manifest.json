@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio-1/static/css/main.02244d1f.chunk.css",
-    "main.js": "/Portfolio-1/static/js/main.32848e2c.chunk.js",
-    "main.js.map": "/Portfolio-1/static/js/main.32848e2c.chunk.js.map",
+    "main.js": "/Portfolio-1/static/js/main.ac1dd48a.chunk.js",
+    "main.js.map": "/Portfolio-1/static/js/main.ac1dd48a.chunk.js.map",
     "runtime~main.js": "/Portfolio-1/static/js/runtime~main.50905be5.js",
     "runtime~main.js.map": "/Portfolio-1/static/js/runtime~main.50905be5.js.map",
-    "static/js/2.b31c1de2.chunk.js": "/Portfolio-1/static/js/2.b31c1de2.chunk.js",
-    "static/js/2.b31c1de2.chunk.js.map": "/Portfolio-1/static/js/2.b31c1de2.chunk.js.map",
+    "static/js/2.9b6d31f2.chunk.js": "/Portfolio-1/static/js/2.9b6d31f2.chunk.js",
+    "static/js/2.9b6d31f2.chunk.js.map": "/Portfolio-1/static/js/2.9b6d31f2.chunk.js.map",
     "index.html": "/Portfolio-1/index.html",
-    "precache-manifest.f5a7786158d6450562925ed3c87667fb.js": "/Portfolio-1/precache-manifest.f5a7786158d6450562925ed3c87667fb.js",
+    "precache-manifest.91d43035865afe1dd23987083f279c6c.js": "/Portfolio-1/precache-manifest.91d43035865afe1dd23987083f279c6c.js",
     "service-worker.js": "/Portfolio-1/service-worker.js",
     "static/css/main.02244d1f.chunk.css.map": "/Portfolio-1/static/css/main.02244d1f.chunk.css.map",
     "static/media/game.png": "/Portfolio-1/static/media/game.b91cd0ed.png",
@@ -16,6 +16,7 @@
     "static/media/myPhoto.jpg": "/Portfolio-1/static/media/myPhoto.7ea12e57.jpg",
     "static/media/pelican1.png": "/Portfolio-1/static/media/pelican1.7bad8246.png",
     "static/media/photo.jpg": "/Portfolio-1/static/media/photo.25bfa4e7.jpg",
+    "static/media/profile-page.png": "/Portfolio-1/static/media/profile-page.2da4d3c6.png",
     "static/media/timer.png": "/Portfolio-1/static/media/timer.b421587d.png",
     "static/media/todolist.png": "/Portfolio-1/static/media/todolist.8265b33c.png"
   }
