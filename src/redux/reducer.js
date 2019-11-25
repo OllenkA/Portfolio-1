@@ -4,6 +4,8 @@ import pelican from '../assets/pelican1.png';
 import goals from '../assets/goals.png';
 import todo from '../assets/todolist.png';
 import game from '../assets/game.png';
+import page from '../assets/profile-page.png';
+
 
 
 const SHOW_PREVIOUS_WORKS = 'SHOW-PREVIOUS-WORKS';
@@ -49,6 +51,9 @@ const initialState = {
         {id: 5, title: 'Game: Catch the dog', image: game, visible: false,
             linkToPage: "https://ollenka.github.io/game-catch-dog-react/",
             linkToCode: 'https://github.com/OllenkA/game-catch-dog-react'},
+        {id: 6, title: 'Test-task', image: page, visible: false,
+            linkToPage: "https://ollenka.github.io/test-task/",
+            linkToCode: 'https://github.com/OllenkA/test-task'},
     ],
 };
 
