@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { connect } from 'react-redux';
-// import Fade from 'react-reveal/Fade'
+
 
 function Footer(props) {
     let transition = {

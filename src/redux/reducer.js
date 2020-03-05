@@ -5,7 +5,7 @@ import goals from '../assets/goals.png';
 import todo from '../assets/todolist.png';
 import game from '../assets/game.png';
 import page from '../assets/profile-page.png';
-
+import tick from '../assets/tick-tack.png';
 
 
 const SHOW_PREVIOUS_WORKS = 'SHOW-PREVIOUS-WORKS';
@@ -54,6 +54,9 @@ const initialState = {
         {id: 6, title: 'Test-task', image: page, visible: false,
             linkToPage: "https://ollenka.github.io/test-task/",
             linkToCode: 'https://github.com/OllenkA/test-task'},
+        {id: 7, title: 'Tick-tack-toe', image: tick, visible: false,
+            linkToPage: "https://ollenka.github.io/tick-tack-toe-redux/",
+            linkToCode: 'https://github.com/OllenkA/tick-tack-toe-redux'},
     ],
 };
 
